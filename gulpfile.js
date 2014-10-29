@@ -13,7 +13,7 @@ var gulp = require('gulp'),
     livereload = require('gulp-livereload'),
     connect = require('connect'),
     serveStatic = require('serve-static'),
-    dest = './static';
+    dest = './www';
 
 gulp.task('server', function(next) {
   var server = connect();
