@@ -24,14 +24,8 @@ function diff(text1, text2, opts) {
   return dmp.diff_prettyHtml(d);
 }
 
-var textArea1;
-var textArea2;
-
-var launchButton = document.getElementById("launch");
-launchButton.addEventListener("click", launch, false);
-
-textArea1 = document.getElementById("text1");
-textArea2 = document.getElementById("text2");
+var textArea1 = document.querySelector("#text1");
+var textArea2 = document.querySelector("#text2");
 
 function launch() {
   console.log("comparing text areas...");
@@ -43,4 +37,5 @@ function launch() {
   document.getElementById("outputdiv").innerHTML = ds;
 }
 
+document.querySelector("#launch").addEventListener('click', launch);
 launch();

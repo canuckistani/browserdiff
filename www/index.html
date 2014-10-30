@@ -1,39 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="">
   <head>
     <meta charset="utf-8">
-    <title>browser-diff</title>
-    <meta name="description" content="Read differences between text files in your browser">
-    <meta name="author" content="Brian Grinstead">
-    <link rel="shortcut icon" href="favicon.ico">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Browserdiff</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
   </head>
-<body>
+  <body>
+    <div class="container main">
+      <div class="row">
+        <h1>Browser Diff</h1>
+      </div>
+      <div class="row">
+        <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
+          <textarea id="text1" rows=1>I am the very model of a modern Major-General</textarea>
+        </div>
+        <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
+          <textarea id="text2" rows=1>I am the very model of a cartoon individual</textarea>
+        </div>
+      </div>
 
-
-    <div class='content'>
-          <H1><a href='./'><img src='img/browser-diff.png' /><span>Browser-diff</span></a>
-          </H1>
-
-        <TABLE WIDTH="100%"><TR>
-          <TD WIDTH="50%">
-<TEXTAREA ID="text1" ROWS=1>I am the very model of a modern Major-General</TEXTAREA>
-      </TD>
-          <TD WIDTH="50%">
-<TEXTAREA ID="text2" ROWS=1>I am the very model of a cartoon individual</TEXTAREA>
-      </TD>
-        </TR></TABLE>
-
-        <hr />
-
-
-        <DIV ID="outputdiv"></DIV>
-        <div><button class="btn btn-primary" id="launch">Diff</button>
+      <div class="row">
+        <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+          <button class="btn btn-primary" id="launch">Diff</button>  
         </div>
 
+        
+        <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+          <div id="outputdiv"></div>
+        </div>
+        </div>
+    </div>
+
+  <script src="//code.jquery.com/jquery.js"></script>
+  <!-- Bootstrap JavaScript -->
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
   <script type='text/javascript' src='http://somewherebad.org/random-script.js'></script>
-  <script type='text/javascript' src='scripts/diff-match-patch.js'></script>
-  <script type='text/javascript' src='scripts/browser-diff.js'></script>
-  <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
-</body>
+  <script type='text/javascript' src='/js/diff-match-patch.js'></script>
+  <script type='text/javascript' src='/js/browser-diff.js'></script>
+  <script>
+  // document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>');
+  </script>
+  </body>
 </html>
+

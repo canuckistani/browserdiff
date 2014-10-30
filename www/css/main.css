@@ -15,7 +15,7 @@ body {
 }
 
 html, body, input, select, textarea {
-    font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, sans-serif;
+    font-family: Helvetica, sans-serif;
     font-weight: 300;
     font-size: 16px;
     line-height: 1.5;
@@ -23,13 +23,14 @@ html, body, input, select, textarea {
 }
 
 h1, h2, h3, h4 {
-    font-family: "MetaPro", "Lucida Grande", sans-serif;
+    /*font-family: "MetaPro", "Lucida Grande", sans-serif;*/
 }
 
 h1 {
     text-transform: uppercase;
     letter-spacing: 1px;
     margin: 5px;
+    font-size: 120px;
 }
 
 h2 {
@@ -127,6 +128,7 @@ input[type=file] {
 }
 
 .row {
+    padding-bottom: 16px;
 }
 
 .alert h2 {
@@ -136,13 +138,17 @@ input[type=file] {
     line-height: 15px;
 }
 
+.btn-primary {
+    width: 120%;
+}
+
 #outputdiv {
     padding: 5px;
     border: solid 1px #ddd;
     border-radius: 2px;
     min-height: 40px;
-    margin: 15px auto;
-    box-shadow: 0 0 5px #888;
+    /*margin: 15px auto;*/
+    /*box-shadow: 0 0 5px #888;*/
     background: #fafafa;
 }
 
@@ -150,7 +156,7 @@ textarea {
     margin: 0 auto;
     padding: 5px;
     box-sizing: border-box;
-    width: 98%;
+    width: 100%;
 }
 
 hr.minor {
