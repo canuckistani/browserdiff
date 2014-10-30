@@ -1,5 +1,23 @@
 var dmp = new diff_match_patch();
 
+function makeTable(n) {
+  return _.map(_.range(n), (i) => { 
+    return _.map(_.range(n), (i) => {
+      return _.map(_.range(n), (i) => {
+        return String.fromCharCode(Math.floor((Math.random() * 30)) + 33);
+      }).join('');
+    });
+  }); 
+}
+
+var myObject = {
+  text: "some text",
+  method: (n) => {
+    alert("called method: " + n);
+  },
+  list: [1, 2, 3, 4, 5, 6, 7]
+};
+
 function diff(text1, text2, opts) {
   text1 = text1 || "";
   text2 = text2 || "";
