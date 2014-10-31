@@ -1,9 +1,9 @@
 var dmp = new diff_match_patch();
 
 function makeTable(n) {
-  return _.map(_.range(n), (i) => { 
-    return _.map(_.range(n), (i) => {
-      return _.map(_.range(n), (i) => {
+  return _.map(_.range(n), function(i) { 
+    return _.map(_.range(n), function(i) {
+      return _.map(_.range(n), function(i) {
         return String.fromCharCode(Math.floor((Math.random() * 30)) + 33);
       }).join('');
     });
