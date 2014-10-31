@@ -12,7 +12,7 @@ function makeTable(n) {
 
 var myObject = {
   text: "some text",
-  method: (n) => {
+  method: function(n) {
     alert("called method: " + n);
   },
   list: [1, 2, 3, 4, 5, 6, 7]
